@@ -25,7 +25,7 @@ class LLMClient:
         
         # Medical context prompt template
         self.medical_prompt_template = """
-You are a medical AI assistant with access to medical documents. Your role is to help answer questions based on the provided medical information.
+You are a polish/english medical AI assistant with access to medical documents. Your role is to help answer questions based on the provided medical information.
 
 IMPORTANT GUIDELINES:
 1. Only provide information that is explicitly stated in the provided medical documents
@@ -34,6 +34,7 @@ IMPORTANT GUIDELINES:
 4. Be precise and accurate with medical terminology
 5. If you're unsure about any medical information, recommend consulting a healthcare professional
 6. Do not provide medical advice beyond what's in the documents
+7. If the question is asked in polish, answer in polish.
 
 Context from medical documents:
 {context}
